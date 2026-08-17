@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Calculator - Smart Shetkari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            🌾 Smart Shetkari
+        </div>
+
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="crops.html">Crops</a>
+            <a href="expenses.html">Expenses</a>
+            <a href="farm-records.html">Farm Records</a>
+        </div>
+
+    </nav>
+
+
+    <section class="expense-page">
+
+        <h1>💰 Farm Expense Calculator</h1>
+
+        <p>तुमच्या शेतीचा खर्च calculate करा.</p>
+
+
+        <div class="expense-box">
+
+            <label>🌱 Seeds Cost</label>
+            <input type="number" id="seeds" placeholder="Enter amount">
+
+
+            <label>🧪 Fertilizer Cost</label>
+            <input type="number" id="fertilizer" placeholder="Enter amount">
+
+
+            <label>👨‍🌾 Labour Cost</label>
+            <input type="number" id="labour" placeholder="Enter amount">
+
+
+            <label>💧 Irrigation Cost</label>
+            <input type="number" id="irrigation" placeholder="Enter amount">
+
+
+            <label>🚜 Other Expenses</label>
+            <input type="number" id="other" placeholder="Enter amount">
+            <label>💰 Selling Price</label>
+
+<input
+    type="number"
+    id="selling-price"
+    placeholder="Enter selling price">
+            <button onclick="calculateExpense()">
+                Calculate Total
+            </button>
+            <button onclick="resetExpense()">
+    🔄 Reset
+</button>
+
+
+            <div id="expense-result"></div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

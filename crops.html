@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crop Information - Smart Shetkari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            🌾 Smart Shetkari
+        </div>
+
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="crops.html">Crops</a>
+            <a href="expenses.html">Expenses</a>
+            <a href="farm-records.html">Farm Records</a>
+
+        </div>
+
+    </nav>
+
+    <section class="crop-page">
+
+        <h1>🌾 Crop Information</h1>
+
+        <p>तुमच्या पिकाबद्दल आवश्यक माहिती येथे मिळवा.</p>
+
+    </section>
+    <section class="crop-list">
+
+    <div class="crop-card">
+
+        <div class="crop-icon">🌾</div>
+
+        <h2>Wheat</h2>
+
+        <p><strong>Season:</strong> Rabi</p>
+
+        <p>गहू हे प्रमुख रब्बी पीक आहे.</p>
+
+      <button onclick="showCropDetails('wheat')">
+       View Details
+</button>
+<div id="wheat-details" class="crop-details"></div>
+
+    </div>
+
+
+    <div class="crop-card">
+
+        <div class="crop-icon">🌱</div>
+
+        <h2>Soybean</h2>
+
+        <p><strong>Season:</strong> Kharif</p>
+
+        <p>सोयाबीन हे प्रमुख खरीप पीक आहे.</p>
+
+       <button onclick="showCropDetails('soybean')">
+    View Details
+</button>
+<div id="soybean-details" class="crop-details"></div>
+
+    </div>
+
+
+    <div class="crop-card">
+
+        <div class="crop-icon">🌽</div>
+
+        <h2>Maize</h2>
+
+        <p><strong>Season:</strong> Kharif</p>
+
+        <p>मका हे विविध उपयोगांचे महत्त्वाचे पीक आहे.</p>
+
+      <button onclick="showCropDetails('maize')">
+    View Details
+</button>
+<div id="maize-details" class="crop-details"></div>
+
+    </div>
+
+    <div class="crop-card">
+
+    <div class="crop-icon">🌱</div>
+
+    <h2>Cotton</h2>
+
+    <p><strong>Season:</strong> Kharif</p>
+
+    <p>कापूस हे महत्त्वाचे नगदी पीक आहे.</p>
+
+    <button onclick="showCropDetails('cotton')">
+    View Details
+</button>
+<div id="cotton-details" class="crop-details"></div>
+
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

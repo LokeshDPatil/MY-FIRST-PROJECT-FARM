@@ -1,0 +1,440 @@
+/* ==================================================
+   SMART SHETKARI - WEATHER PAGE DESIGN
+   ================================================== */
+
+.weather-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px 25px;
+    text-align: center;
+}
+
+
+/* ==================================================
+   PAGE TITLE
+   ================================================== */
+
+.weather-page > h1 {
+    font-size: 44px;
+    color: #123d1c;
+    margin-bottom: 8px;
+}
+
+.weather-page > p {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+
+/* ==================================================
+   SEARCH AREA
+   ================================================== */
+
+.weather-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.weather-search input {
+    width: 320px;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 2px solid #b8cdb8;
+    border-radius: 10px;
+    outline: none;
+}
+
+.weather-search input:focus {
+    border-color: #087f23;
+    box-shadow: 0 0 8px rgba(8, 127, 35, 0.18);
+}
+
+.weather-search button,
+.location-button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #087f23;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.weather-search button:hover,
+.location-button:hover {
+    background: #05651c;
+    transform: translateY(-2px);
+}
+
+.location-button {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+
+/* ==================================================
+   LOADING
+   ================================================== */
+
+#weather-loading {
+    color: #087f23;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+
+/* ==================================================
+   CURRENT WEATHER CARD
+   ================================================== */
+
+.weather-card {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    border-top: 7px solid #087f23;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+}
+
+.weather-card h2 {
+    color: #087f23;
+    font-size: 28px;
+    margin-bottom: 3px;
+}
+
+.weather-card h1 {
+    font-size: 52px;
+    color: #1b1b1b;
+    margin: 15px 0;
+}
+
+.weather-card h3 {
+    font-size: 23px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.weather-card p {
+    font-size: 17px;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+/* ==================================================
+   FARM ADVISORY
+   ================================================== */
+
+#farm-advisory {
+    max-width: 750px;
+    margin: 30px auto;
+}
+
+.farm-advisory {
+    background: #fffdf0;
+    border-left: 7px solid #e0a800;
+    border-radius: 14px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.farm-advisory h3 {
+    color: #876600;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.farm-advisory p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+
+/* ==================================================
+   5 DAY FORECAST
+   ================================================== */
+
+#five-day-forecast {
+    margin: 35px auto;
+}
+
+.forecast-section {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    border-top: 7px solid #087f23;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
+}
+
+.forecast-section h2 {
+    color: #087f23;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.forecast-subtitle {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.forecast-card {
+    background: #f7fff5;
+    border: 1px solid #c8dfc5;
+    border-radius: 14px;
+    padding: 18px 12px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.forecast-card h3 {
+    color: #087f23;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.forecast-icon {
+    font-size: 45px;
+    margin: 12px 0;
+}
+
+.forecast-condition {
+    min-height: 45px;
+    font-size: 14px;
+    color: #333;
+}
+
+.forecast-card p {
+    font-size: 14px;
+    margin: 9px 0;
+}
+
+
+/* ==================================================
+   CROP ADVISORY
+   ================================================== */
+
+#crop-advisory {
+    max-width: 800px;
+    margin: 35px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    border-left: 7px solid #087f23;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
+}
+
+#crop-advisory h2 {
+    color: #087f23;
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+#crop-advisory h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#crop-advisory p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+
+/* ==================================================
+   CROP SELECT
+   ================================================== */
+
+#advisory-crop {
+    width: 280px;
+    padding: 13px;
+    border: 2px solid #b8cdb8;
+    border-radius: 9px;
+    font-size: 16px;
+    background: white;
+    outline: none;
+}
+
+#advisory-crop:focus {
+    border-color: #087f23;
+}
+
+
+/* ==================================================
+   ADVISORY BUTTON
+   ================================================== */
+
+#crop-advisory button {
+    padding: 13px 20px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 9px;
+    background: #087f23;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#crop-advisory button:hover {
+    background: #05651c;
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   ADVISORY RESULT
+   ================================================== */
+
+#crop-advisory-result {
+    margin-top: 25px;
+}
+
+.crop-advisory-card {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #f7fff5;
+    border: 1px solid #b9dcb4;
+    border-radius: 14px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.crop-advisory-card h3 {
+    color: #087f23;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.crop-advisory-card h4 {
+    color: #444;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.crop-advisory-card p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.crop-advisory-card hr {
+    border: none;
+    border-top: 1px solid #c8d9c5;
+    margin: 20px 0;
+}
+
+
+/* ==================================================
+   WEATHER SOURCE
+   ================================================== */
+
+.weather-source {
+    margin-top: 35px !important;
+    color: #666 !important;
+    font-size: 14px !important;
+}
+
+
+/* ==================================================
+   MOBILE RESPONSIVE
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .forecast-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .weather-page {
+        padding: 30px 15px;
+    }
+
+    .weather-page > h1 {
+        font-size: 34px;
+    }
+
+    .weather-page > p {
+        font-size: 17px;
+    }
+
+    .weather-search {
+        flex-direction: column;
+    }
+
+    .weather-search input {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .weather-search button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .location-button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .weather-card {
+        padding: 22px 15px;
+    }
+
+    .weather-card h1 {
+        font-size: 42px;
+    }
+
+    #crop-advisory {
+        padding: 22px 15px;
+    }
+
+    #advisory-crop {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    #crop-advisory button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .forecast-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast-section {
+        padding: 22px 12px;
+    }
+
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Live Weather - Smart Shetkari</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+<link rel="stylesheet" href="weather.css">
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         NAVIGATION
+         ================================= -->
+
+    <nav>
+
+        <div class="logo">
+            🌾 Smart Shetkari
+        </div>
+
+        <div class="menu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="crops.html">
+                Crops
+            </a>
+
+            <a href="expenses.html">
+                Expenses
+            </a>
+
+            <a href="farm-records.html">
+                Farm Records
+            </a>
+
+            <a href="weather.html">
+                Weather
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================================
+         WEATHER PAGE
+         ================================= -->
+
+    <section class="weather-page">
+
+
+        <h1>
+            🌦️ Live Weather
+        </h1>
+
+
+        <p>
+            सध्याचे हवामान जाणून घ्या
+            (Check Current Weather)
+        </p>
+
+
+
+        <!-- CITY SEARCH -->
+
+        <div class="weather-search">
+
+            <input
+                type="text"
+                id="city"
+                placeholder="Enter city name">
+
+            <button
+                onclick="getWeatherByCity()">
+
+                🔍 Search Weather
+
+            </button>
+
+        </div>
+
+
+
+        <!-- CURRENT LOCATION -->
+
+        <button
+            class="location-button"
+            onclick="getMyLocation()">
+
+            📍 माझे Location वापरा
+
+        </button>
+
+
+
+        <!-- LOADING -->
+
+        <div id="weather-loading"></div>
+
+
+
+        <!-- CURRENT WEATHER -->
+
+        <div id="weather-result"></div>
+
+
+
+        <!-- GENERAL FARM ADVISORY -->
+
+        <div id="farm-advisory"></div>
+
+
+
+        <!-- ================================
+             5 DAY FORECAST
+             ================================= -->
+
+        <div id="five-day-forecast">
+
+        </div>
+
+
+
+        <!-- ================================
+             CROP ADVISORY
+             ================================= -->
+
+        <div id="crop-advisory">
+
+
+            <h2>
+                🌱 Crop Advisory
+            </h2>
+
+
+            <h3>
+                पिकासाठी सल्ला
+            </h3>
+
+
+            <p>
+                तुमचे पीक निवडा आणि हवामानानुसार
+                शेतीविषयक सल्ला मिळवा.
+            </p>
+
+
+            <select id="advisory-crop">
+
+                <option value="">
+                    -- Select Crop / पीक निवडा --
+                </option>
+
+                <option value="wheat">
+                    🌾 Wheat / गहू
+                </option>
+
+                <option value="soybean">
+                    🌱 Soybean / सोयाबीन
+                </option>
+
+                <option value="maize">
+                    🌽 Maize / मका
+                </option>
+
+                <option value="cotton">
+                    🌿 Cotton / कापूस
+                </option>
+
+            </select>
+
+
+            <button
+                onclick="showCropAdvisory()">
+
+                🌱 Get Advisory / सल्ला मिळवा
+
+            </button>
+
+
+            <div id="crop-advisory-result">
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- SOURCE -->
+
+        <p class="weather-source">
+
+            Weather data provided by
+            Open-Meteo
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

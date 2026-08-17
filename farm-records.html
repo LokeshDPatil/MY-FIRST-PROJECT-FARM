@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Farm Records - Smart Shetkari</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+
+        <div class="logo">
+            🌾 Smart Shetkari
+        </div>
+
+        <div class="menu">
+
+          <a href="index.html">Home</a>
+
+          <a href="crops.html">Crops</a>
+
+          <a href="expenses.html">Expenses</a>
+
+          <a href="farm-records.html">Farm Records</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Farm Records Section -->
+
+    <section class="farm-record-page">
+
+        <h1>🌾 Farm Records</h1>
+
+        <p>
+            तुमच्या शेतीची माहिती येथे नोंदवा.
+        </p>
+
+
+        <div class="record-box">
+
+            <label>🌱 Crop Name</label>
+
+            <input
+                type="text"
+                id="crop-name"
+                placeholder="Enter crop name">
+
+
+            <label>📏 Land Area (Acre)</label>
+
+            <input
+                type="number"
+                id="land-area"
+                placeholder="Enter land area">
+
+
+            <label>📅 Sowing Date</label>
+
+            <input
+                type="date"
+                id="sowing-date">
+
+
+            <label>💰 Total Expense</label>
+
+            <input
+                type="number"
+                id="record-expense"
+                placeholder="Enter total expense">
+
+
+            <label>🌾 Expected Production (Quintal)</label>
+
+            <input
+                type="number"
+                id="production"
+                placeholder="Enter production">
+// button
+
+          <button id="record-button" onclick="addFarmRecord()">
+    ➕ Add Record
+</button>
+
+        </div>
+
+
+        <!-- Records will appear here -->
+
+        <div id="records-container">
+
+        </div>
+
+    </section>
+
+
+   <script src="script.js"></script>
+
+</body>
+
+</html>
